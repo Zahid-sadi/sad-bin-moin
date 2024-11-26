@@ -25,11 +25,10 @@ const NavLink = () => {
                         id={link.id} // Assigning a unique id to each link
                         className={`flex items-center gap-2 text-lg font-medium transition-colors duration-300 ${
                             isActive
-                                ? "text-lime-500 dark:text-lime-400"
-                                : "text-gray-700 hover:text-yellow-400 dark:text-white dark:hover:text-yellow-400"
+                                ? "text-teal-400 dark:text-lime-400"
+                                : "text-gray-700 hover:text-teal-400 dark:text-white dark:hover:text-yellow-400"
                         }`}
                     >
-                        
                         {link.label}
                     </Link>
                 );

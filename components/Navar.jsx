@@ -2,11 +2,10 @@ import logo from "@/public/Images/saad.JPG";
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./Navlink";
-import ToggleButton from "./ToggleButton";
 
 const Navbar = () => {
     return (
-        <nav className=" sticky top-0 px-6 md:px-12 flex bg-black opacity-90  items-center justify-between w-full border-b py-5 ">
+        <nav className=" sticky top-0 px-6 md:px-12 flex bg-black opacity-90 gap-5 items-center justify-center w-full py-5 ">
             <Link href="/">
                 <Image
                     alt="logo"
@@ -18,7 +17,7 @@ const Navbar = () => {
             </Link>
 
             <NavLink />
-            <ToggleButton />
+            {/* <ToggleButton /> */}
         </nav>
     );
 };
