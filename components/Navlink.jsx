@@ -24,10 +24,8 @@ const NavLink = () => {
                         key={link.href}
                         href={link.href}
                         id={link.id} // Assigning a unique id to each link
-                        className={`flex items-center gap-2 text-white text-lg font-medium transition-colors duration-300 ${
-                            isActive
-                                ? "text-teal-400 dark:text-lime-400"
-                                : "text-gray-700 hover:text-teal-400"
+                        className={`flex items-center gap-2  text-lg font-medium transition-colors duration-300 ${
+                            isActive ? "text-teal-400 " : "text-gray-300 hover:text-black"
                         }`}
                     >
                         {link.label}
