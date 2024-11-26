@@ -7,25 +7,30 @@ const goals = [
         title: "Expand IT Expertise",
         description:
             "Enhance my skills in cloud computing, cybersecurity, and advanced networking to stay ahead in the IT field.",
+        size: "col-span-1", // Small size
     },
     {
         title: "Certifications",
         description:
             "Earn industry-recognized certifications like AWS Certified Solutions Architect and CompTIA Security+. ",
+        size: "col-span-2", // Larger size
     },
     {
         title: "Mentorship",
         description: "Guide aspiring IT engineers by sharing knowledge and helping them grow in their careers.",
+        size: "col-span-1", // Small size
     },
     {
         title: "Develop Personal Projects",
         description:
             "Work on innovative projects that solve real-world IT challenges and contribute to open-source communities.",
+        size: "col-span-2", // Larger size
     },
     {
         title: "Leadership Roles",
         description:
             "Take on leadership roles in IT operations and project management, driving efficiency and innovation.",
+        size: "col-span-1", // Small size
     },
 ];
 
@@ -58,7 +63,7 @@ const FutureGoalsSection = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.3 }}
                             whileHover={{ scale: 1.05 }}
-                            className="relative bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition-all"
+                            className={`relative bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition-all ${goal.size}`}
                         >
                             <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-600 rounded-lg opacity-70"></div>
                             <div className="relative z-10 text-center">
