@@ -11,9 +11,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Contact</h3>
                         <ul>
-                            <li className="mb-2">Email: saad@example.com</li>
+                            <li className="mb-2">Email: saad@gmail.com</li>
                             <li className="mb-2">Phone: (123) 456-7890</li>
-                            <li className="mb-2">Address: 123 Tech St, City, Country</li>
+                            <li className="mb-2">Address: c St, Dhaka, Bangladesh</li>
                         </ul>
                     </div>
 

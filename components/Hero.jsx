@@ -33,13 +33,13 @@ const HeroSection = () => {
                     >
                         Saad bin Moin <br />
                     </motion.h1>
-                    <span className="text-yellow-700 uppercase text-4xl font-semibold">IT Engineer</span>
+                    <span className="text-yellow-700 ml-2 uppercase text-4xl font-semibold">IT Engineer</span>
 
                     <motion.p
                         initial="hidden"
                         animate="visible"
                         variants={paragraphVariants}
-                        className="text-lg md:text-2xl leading-relaxed text-gray-900  dark:text-gray-300"
+                        className="text-lg md:text-2xl ml-2 leading-relaxed text-gray-900  dark:text-gray-300"
                     >
                         Build something amazing together!
                     </motion.p>

@@ -33,7 +33,7 @@ const hobbies = [
 
 const HobbySection = () => {
     return (
-        <div id="hobbies" className="bg-gray-50 dark:bg-gray-800 py-12">
+        <div id="hobbies" className="bg-gray-50 md:py-24 dark:bg-gray-800 py-12">
             <div className="max-w-7xl mx-auto text-center px-4">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
