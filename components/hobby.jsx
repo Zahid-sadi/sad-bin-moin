@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const hobbies = [
     {
@@ -63,7 +64,7 @@ const HobbySection = () => {
                         >
                             {/* Hobby Image */}
                             <div className="h-48 w-full">
-                                <img src={hobby.image} alt={hobby.name} className="object-cover w-full h-full" />
+                                <Image src={hobby.image} width={400} height={400} alt={hobby.name} className="object-cover w-full h-full" />
                             </div>
 
                             {/* Hobby Info */}
