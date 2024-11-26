@@ -10,7 +10,7 @@ const hobbies = [
     },
     {
         name: "Pet Care",
-        image: "/images/catmen.jpg", // Path to the pet image
+        image: "/images/caat.jpg", // Path to the pet image
         description: "Spending time with pets brings me joy and helps me connect with animals.",
     },
     {
@@ -19,9 +19,9 @@ const hobbies = [
         description: "I love exploring nature and challenging myself with adventurous trails.",
     },
     {
-        name: "Reading",
-        image: "/images/pet.jpg", // Path to the reading image
-        description: "Immersing myself in books is a way to gain knowledge and relax my mind.",
+        name: "Cycling",
+        image: "/images/cycle.jpg", // Path to the reading image
+        description: "Immersing myself in cycling is a way to gain refresh and relax my mind.",
     },
     {
         name: "Photography",
