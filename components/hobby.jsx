@@ -1,35 +1,35 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaBook, FaCamera, FaHiking, FaPaintBrush } from "react-icons/fa";
-import { TbCricket } from "react-icons/tb";
+
 const hobbies = [
     {
         name: "Cricket",
-        icon: <TbCricket className="text-red-500" size={40} />,
-        description: "I enjoy playing cricket, staying active, and being part of a team sport.",
+        image: "/images/ball.jpg", // Path to the cricket image
+        description: "I enjoy playing cricket, honing my skills, and experiencing the thrill of the game.",
     },
     {
-        name: "Painting",
-        icon: <FaPaintBrush className="text-pink-500" size={40} />,
-        description: "I love to create art and explore my imagination through colors.",
+        name: "Pet Care",
+        image: "/images/catmen.jpg", // Path to the pet image
+        description: "Spending time with pets brings me joy and helps me connect with animals.",
     },
     {
         name: "Hiking",
-        icon: <FaHiking className="text-green-500" size={40} />,
-        description: "Being amidst nature and climbing trails rejuvenates me.",
+        image: "/images/h.jpg", // Path to the hiking image
+        description: "I love exploring nature and challenging myself with adventurous trails.",
     },
     {
         name: "Reading",
-        icon: <FaBook className="text-blue-500" size={40} />,
-        description: "I enjoy reading books on technology, fiction, and self-growth.",
+        image: "/images/pet.jpg", // Path to the reading image
+        description: "Immersing myself in books is a way to gain knowledge and relax my mind.",
     },
     {
         name: "Photography",
-        icon: <FaCamera className="text-purple-500" size={40} />,
-        description: "Capturing moments with my camera is a hobby I cherish.",
+        image: "/images/photo.jpg", // Path to the photography image
+        description: "Capturing the beauty of moments and landscapes is my way of storytelling.",
     },
 ];
+
 
 const HobbySection = () => {
     return (
@@ -62,9 +62,12 @@ const HobbySection = () => {
                             whileHover={{ scale: 1.05 }}
                             className="relative bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden"
                         >
-                            <div className="h-48 flex items-center justify-center text-gray-800 dark:text-gray-100">
-                                {hobby.icon}
+                            {/* Hobby Image */}
+                            <div className="h-48 w-full">
+                                <img src={hobby.image} alt={hobby.name} className="object-cover w-full h-full" />
                             </div>
+
+                            {/* Hobby Info */}
                             <div className="p-4">
                                 <h3 className="text-xl font-bold">{hobby.name}</h3>
                                 <p className="text-gray-600 dark:text-gray-300 mt-2">{hobby.description}</p>
