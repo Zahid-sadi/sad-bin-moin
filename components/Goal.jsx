@@ -63,10 +63,12 @@ const FutureGoalsSection = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.3 }}
                             whileHover={{ scale: 1.05 }}
-                            className={`relative opacity-50 p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition-all ${goal.size}`}
+                            className={`relative p-8 rounded-lg shadow-xl transform transition-all bg-white/30 backdrop-blur-lg ${goal.size}`}
                         >
-                            {/* <div className="absolute inset-0 rounded-lg"></div> */}
-                            <div className="relative z-10 opacity-50 bg-transparent text-center">
+                            {/* Inner Layer for Additional Effect */}
+                            <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-white/50 to-white/10 opacity-70 pointer-events-none"></div>
+
+                            <div className="relative z-10 text-center">
                                 <h3 className="text-2xl font-semibold text-gray-900">{goal.title}</h3>
                                 <p className="text-lg mt-4 text-gray-800">{goal.description}</p>
                             </div>

@@ -30,7 +30,6 @@ const hobbies = [
     },
 ];
 
-
 const HobbySection = () => {
     return (
         <div id="hobbies" className="bg-gray-50 md:py-24 dark:bg-gray-800 py-12">
@@ -56,8 +55,8 @@ const HobbySection = () => {
                     {hobbies.map((hobby, index) => (
                         <motion.div
                             key={index}
-                            initial={{ rotateY: 180 }}
-                            animate={{ rotateY: 0 }}
+                            // initial={{ rotateY: 180 }}
+                            // animate={{ rotateY: 180 }}
                             transition={{ duration: 0.5 }}
                             whileHover={{ scale: 1.05 }}
                             className="relative bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden"
