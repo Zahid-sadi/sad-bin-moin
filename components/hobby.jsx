@@ -1,35 +1,41 @@
 "use client";
 
+import Cricket from "@/public/Images/ball.jpg";
+import cat from "@/public/Images/caat.jpg";
+import Cycling from "@/public/Images/cycle.jpg";
+import Hiking from "@/public/Images/h.jpg";
+import Photography from "@/public/Images/photo.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 const hobbies = [
     {
         name: "Cricket",
-        image: "/images/ball.jpg", // Path to the cricket image
+        image: Cricket, // Correctly pass the imported image
         description: "I enjoy playing cricket, honing my skills, and experiencing the thrill of the game.",
     },
     {
         name: "Pet Care",
-        image: "/images/caat.jpg", // Path to the pet image
+        image: cat, // Correctly pass the imported image
         description: "Spending time with pets brings me joy and helps me connect with animals.",
     },
     {
         name: "Hiking",
-        image: "/images/h.jpg", // Path to the hiking image
+        image: Hiking, // Correctly pass the imported image
         description: "I love exploring nature and challenging myself with adventurous trails.",
     },
     {
         name: "Cycling",
-        image: "/images/cycle.jpg", // Path to the reading image
+        image: Cycling, // Correctly pass the imported image
         description: "Immersing myself in cycling is a way to gain refresh and relax my mind.",
     },
     {
         name: "Photography",
-        image: "/images/photo.jpg", // Path to the photography image
+        image: Photography, // Correctly pass the imported image
         description: "Capturing the beauty of moments and landscapes is my way of storytelling.",
     },
 ];
+
 
 const HobbySection = () => {
     return (
@@ -56,8 +62,7 @@ const HobbySection = () => {
                     {hobbies.map((hobby, index) => (
                         <motion.div
                             key={index}
-                            // initial={{ rotateY: 180 }}
-                            // animate={{ rotateY: 180 }}
+                          
                             transition={{ duration: 0.5 }}
                             whileHover={{ scale: 1.05 }}
                             className="relative bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden"

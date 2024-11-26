@@ -128,7 +128,7 @@ const ContactSection = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-lg mb-10"
                 >
-                    I’d love to hear from you. Reach out to me through any of the platforms below or use the contact
+                    I’d love to hear from you. Reach out to me through any of the platforms above or use the contact
                     form.
                 </motion.p>
             </div>
