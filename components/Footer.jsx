@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
     return (
         <div className="bg-teal-950 text-white py-10">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-20">
                     {/* Contact Info */}
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Contact</h3>
@@ -22,24 +23,19 @@ const Footer = () => {
                         <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
                         <ul>
                             <li className="mb-2">
-                                <a href="#about" className="hover:text-teal-400">
-                                    About Me
-                                </a>
+                                <Link href="/">About Me</Link>
                             </li>
                             <li className="mb-2">
-                                <a href="#services" className="hover:text-teal-400">
-                                    Services
-                                </a>
+                                <Link href="/skills">Skills</Link>
                             </li>
                             <li className="mb-2">
-                                <a href="#projects" className="hover:text-teal-400">
-                                    Projects
-                                </a>
+                                <Link href="/goal">Goal</Link>
                             </li>
                             <li className="mb-2">
-                                <a href="#contact" className="hover:text-teal-400">
-                                    Contact
-                                </a>
+                                <Link href="/hobby">Hobby</Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>

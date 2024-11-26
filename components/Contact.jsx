@@ -107,7 +107,7 @@ const ContactSection = () => {
                         <div className="flex justify-center">
                             <button
                                 type="submit"
-                                className="py-3 px-6 bg-black text-white rounded-lg hover:bg-yellow-700 transition duration-300"
+                                className="py-3 px-6 bg-black text-white rounded-lg hover:bg-teal-700 transition duration-300"
                             >
                                 Send Message
                             </button>

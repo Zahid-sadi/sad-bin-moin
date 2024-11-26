@@ -11,6 +11,7 @@ const NavLink = () => {
         { href: "/skills", label: "Skills", icon: FaTools, id: "skills" },
         { href: "/goal", label: "Goal", icon: FaProjectDiagram, id: "projects" },
         { href: "/hobby", label: "Hobby", icon: FaEnvelope, id: "contact" },
+        { href: "/contact", label: "Contact", icon: FaEnvelope, id: "contact" },
     ];
 
     return (
