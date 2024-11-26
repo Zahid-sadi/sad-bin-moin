@@ -36,7 +36,7 @@ const goals = [
 
 const FutureGoalsSection = () => {
     return (
-        <div id="future-goals" className="py-20  text-white">
+        <div id="future-goals" className="py-20 bg-teal-700 text-white">
             <div className="max-w-7xl mx-auto px-6 text-center">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
@@ -63,7 +63,7 @@ const FutureGoalsSection = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.3 }}
                             whileHover={{ scale: 1.05 }}
-                            className={`relative p-8 rounded-lg shadow-xl border transform transition-all bg-white/30 backdrop-blur-lg ${goal.size}`}
+                            className={`relative p-8 rounded-lg shadow-xl  transform transition-all bg-teal-600 backdrop-blur-lg ${goal.size}`}
                         >
                             {/* Inner Layer for Additional Effect */}
                             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-white/50 to-white/10 opacity-70 pointer-events-none"></div>
