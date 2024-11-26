@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="bg-teal-950 text-white py-10">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-12">
                     {/* Contact Info */}
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Contact</h3>
@@ -63,6 +63,21 @@ const Footer = () => {
                         </div>
                     </div>
 
+                    {/* Newsletter */}
+                    <div className="w-fit">
+                        <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
+                        <p className="mb-4">Sign up to receive the latest updates and news.</p>
+                        <form className="flex">
+                            <input
+                                type="email"
+                                placeholder="Your email"
+                                className="p-2 rounded-l-lg text-gray-900 focus:outline-none"
+                            />
+                            <button type="submit" className="bg-teal-500 text-white p-2 rounded-r-lg hover:bg-teal-400">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
                 {/* Bottom Section */}
