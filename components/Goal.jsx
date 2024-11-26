@@ -32,11 +32,17 @@ const goals = [
             "Take on leadership roles in IT operations and project management, driving efficiency and innovation.",
         size: "col-span-1", // Small size
     },
+    {
+        title: "Social Activist",
+        description:
+            "Take on leadership roles in IT operations and project management, driving efficiency and innovation.",
+        size: "col-span-1", // Small size
+    },
 ];
 
 const FutureGoalsSection = () => {
     return (
-        <div id="future-goals" className="py-20 bg-teal-700 text-white">
+        <div id="future-goals" className="py-20 bg-teal-500 text-white">
             <div className="max-w-7xl mx-auto px-6 text-center">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
