@@ -9,8 +9,8 @@ const NavLink = () => {
     const navLinks = [
         { href: "/", label: "Home", icon: FaHome, id: "" },
         { href: "/skills", label: "Skills", icon: FaTools, id: "skills" },
-        { href: "/project", label: "Projects", icon: FaProjectDiagram, id: "projects" },
-        { href: "/contact", label: "Contact", icon: FaEnvelope, id: "contact" },
+        { href: "/goal", label: "Goal", icon: FaProjectDiagram, id: "projects" },
+        { href: "/hobby", label: "Hobby", icon: FaEnvelope, id: "contact" },
     ];
 
     return (
@@ -23,10 +23,10 @@ const NavLink = () => {
                         key={link.href}
                         href={link.href}
                         id={link.id} // Assigning a unique id to each link
-                        className={`flex items-center gap-2 text-lg font-medium transition-colors duration-300 ${
+                        className={`flex items-center gap-2 text-white text-lg font-medium transition-colors duration-300 ${
                             isActive
                                 ? "text-teal-400 dark:text-lime-400"
-                                : "text-gray-700 hover:text-teal-400 dark:text-white dark:hover:text-yellow-400"
+                                : "text-gray-700 hover:text-teal-400"
                         }`}
                     >
                         {link.label}
