@@ -32,11 +32,11 @@ const HeroSection = () => {
                         initial="hidden"
                         animate="visible"
                         variants={headingVariants}
-                        className="text-5xl uppercase md:text-9xl font-black text-yellow-500 dark:text-teal-400"
+                        className=" text-3xl md:text-5xl uppercase lg:text-9xl font-semibold md:font-black text-yellow-500 dark:text-teal-400"
                     >
                         Saad bin Moin <br />
                     </motion.h1>
-                    <span className="text-yellow-700 ml-2 bg-black w-fit px-1 opacity-95 uppercase text-4xl font-semibold">
+                    <span className="text-yellow-700 ml-2 bg-black w-fit px-1 opacity-95 uppercase text-lg md:text-4xl font-medium md:font-semibold">
                         IT Engineer
                     </span>
 
@@ -44,7 +44,7 @@ const HeroSection = () => {
                         initial="hidden"
                         animate="visible"
                         variants={paragraphVariants}
-                        className="text-lg md:text-2xl ml-2 leading-relaxed bg-black w-fit px-1 opacity-95 text-yellow-800 dark:text-gray-300"
+                        className=" text-base md:text-2xl ml-2 leading-relaxed bg-black w-fit px-1 opacity-95 text-yellow-800 dark:text-gray-300"
                     >
                         Build something amazing together!
                     </motion.p>
