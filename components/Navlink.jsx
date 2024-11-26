@@ -26,10 +26,11 @@ const NavLink = () => {
                         className={`flex items-center gap-2 text-lg font-medium transition-colors duration-300 ${
                             isActive
                                 ? "text-lime-500 dark:text-lime-400"
-                                : "text-gray-700 hover:text-lime-400 dark:text-white dark:hover:text-lime-400"
+                                : "text-gray-700 hover:text-yellow-400 dark:text-white dark:hover:text-yellow-400"
                         }`}
                     >
-                        <Icon className="text-2xl" /> {/* Display the icon */}
+                        
+                        {link.label}
                     </Link>
                 );
             })}

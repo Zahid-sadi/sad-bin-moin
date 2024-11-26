@@ -6,14 +6,14 @@ import ToggleButton from "./ToggleButton";
 
 const Navbar = () => {
     return (
-        <nav className="fixed px-6 md:px-12 flex  items-center justify-between w-full border-b py-5 ">
+        <nav className=" sticky top-0 px-6 md:px-12 flex bg-black opacity-90  items-center justify-between w-full border-b py-5 ">
             <Link href="/">
                 <Image
                     alt="logo"
                     height={100}
                     width={100}
                     src={logo}
-                    className="text-white dark:text-teal-500 h-12 rounded-full w-auto"
+                    className="h-12 z-50 rounded-full w-auto"
                 />
             </Link>
 
@@ -24,3 +24,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+ 
