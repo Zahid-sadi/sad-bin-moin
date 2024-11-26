@@ -63,12 +63,12 @@ const FutureGoalsSection = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.3 }}
                             whileHover={{ scale: 1.05 }}
-                            className={`relative bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition-all ${goal.size}`}
+                            className={`relative opacity-50 p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition-all ${goal.size}`}
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-600 rounded-lg opacity-70"></div>
-                            <div className="relative z-10 text-center">
-                                <h3 className="text-2xl font-semibold text-white">{goal.title}</h3>
-                                <p className="text-lg mt-4 text-white">{goal.description}</p>
+                            {/* <div className="absolute inset-0 rounded-lg"></div> */}
+                            <div className="relative z-10 opacity-50 bg-transparent text-center">
+                                <h3 className="text-2xl font-semibold text-gray-900">{goal.title}</h3>
+                                <p className="text-lg mt-4 text-gray-800">{goal.description}</p>
                             </div>
                         </motion.div>
                     ))}
